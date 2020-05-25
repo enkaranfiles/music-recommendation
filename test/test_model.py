@@ -2,7 +2,7 @@ from keras.models import load_model
 import numpy as np
 from analyze import x_test,y_test
 
-model = load_model('model/song_classify.h5')
+model = load_model('../model/song_classify.h5')
 
 from sklearn.metrics import accuracy_score
 
