@@ -17,6 +17,7 @@ token = util.prompt_for_user_token(USER_ID, '',
                                    redirect_uri='http://127.0.0.1:8000/callback') # also you need to add this url whitelist in your account
 session = spotipy.Spotify(auth=token)
 
+
 def find_playlists(session, w, max_count=5000):
     try:
         res = session.search(w, limit=50, type='playlist')
